@@ -35,16 +35,11 @@ func main() {
 	i := 0
 	days := 0
 	day := 0
-
 	readingWeights := false
 	weightTotal := 0
 	weight := 0
 
 	for scanner.Scan() {
-		// line := strings.TrimSpace(scanner.Text())
-		// num, _ := strconv.Atoi(strings.TrimSpace(scanner.Text()))
-		// fmt.Printf("%d\n", days)
-
 		if i == 0 {
 			// read in number of days to follow
 			days, _ = strconv.Atoi(strings.TrimSpace(scanner.Text()))
@@ -71,39 +66,4 @@ func main() {
 	}
 
 	return
-
-	// days := 0
-	// if scanner.Scan() {
-	// 	days, _ := strconv.Atoi(strings.TrimSpace(scanner.Text()))
-	// 	fmt.Printf("%d\n----\n", days)
-	// }
-
-	// for i := 0; i < days; i++ {
-	// 	numWeights := 0
-	// 	if scanner.Scan() {
-	// 		numWeights, _ = strconv.Atoi(strings.TrimSpace(scanner.Text()))
-	// 		fmt.Printf("%d\n", numWeights)
-	// 	}
-
-	// 	weight := 0
-	// 	for j := 0; j < numWeights; j++ {
-	// 		if scanner.Scan() {
-	// 			weight, _ = strconv.Atoi(strings.TrimSpace(scanner.Text()))
-	// 			fmt.Printf("\t%d\n", weight)
-	// 		}
-	// 	}
-	// }
-
-	// // iterate through the commands
-	// i := 0
-	// for scanner.Scan() {
-	// 	line := strconv.Atoi(strings.TrimSpace(scanner.Text()))
-
-	// 	if i == 0 {
-	// 		// number of days
-
-	// 	}
-
-	// 	i++
-	// }
 }
