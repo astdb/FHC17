@@ -5,16 +5,13 @@
 
 import java.util.*;
 
-public class ProgressPie 
-{
-	public static void main(String args[])
-	{
+public class ProgressPie {
+	public static void main(String args[]) {
 		double EPS = 0.000001;
 		Scanner scan = new Scanner(System.in);
 		int T = scan.nextInt();
 
-		for(int ca=1;ca <= T;ca++)
-		{
+		for(int ca=1;ca <= T;ca++) {
 			double p = scan.nextDouble() / 100;
 			double x = scan.nextDouble();
 			double y = scan.nextDouble();
@@ -24,8 +21,7 @@ public class ProgressPie
 		}
 	}
 
-	public static boolean solve(double p, double x, double y)
-	{
+	public static boolean solve(double p, double x, double y) {
 		if(p == 0) return false;
 
 		double dx = x - 50;
